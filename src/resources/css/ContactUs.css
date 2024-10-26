@@ -1,0 +1,28 @@
+.box{
+    height:50vh;
+    width:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2;
+}
+.icon-box {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+  }
+  
+  .icon img {
+    width: 20px;
+    height: 20px;
+  }
+.icon1{
+    height:20vh;
+    width: 20vh; 
+
+}
+.icon2{
+    height:20vh;
+    width: 20vh; 
+
+}
