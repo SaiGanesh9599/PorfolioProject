@@ -1,70 +1,148 @@
-# Getting Started with Create React App
+# Portfolio Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a portfolio website built using React, Material UI, and Joy UI. It showcases personal projects, social profiles, academic background, and a resume.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+1. [Project Overview](#project-overview)
+2. [Directory Structure](#directory-structure)
+3. [Functionality Overview](#functionality-overview)
+4. [Packages Used](#packages-used)
+5. [Scripts](#scripts)
+6. [Installation](#installation)
+7. [Running the Project](#running-the-project)
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A portfolio website showcasing projects, social links, and an academic timeline. used redux to maintain state of the bottom navigation, also used localstorage to store the selected in the bottom navigation. Customized all the used MUI and JoyUI components using the sx property. Used Typewriter-effect in the home page. used react router dom for routing the pages. Used Axios to featch data from backend. (only in the PageNotFound page data is featched to understand the concept remaining all the pages use the data from the Constants.js file in the Utils folder)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Directory Structure
 
-### `npm test`
+```bash
+root/
+│
+├── public/
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── components/
+│   │   ├── Academics.jsx
+│   │   ├── Dashbord.jsx
+│   │   ├── Home.jsx
+│   │   ├── ContactUs.jsx
+│   │   ├── Profile.jsx
+│   │   └── Projects.jsx
+│   ├── resources/
+│   │   ├── css/
+│   │   │   ├── academics.css
+│   │   │   ├── dashbord.css
+│   │   │   ├── home.css
+│   │   │   ├── profile.css
+│   │   │   ├── projects.css
+│   │   │   └── shared.css
+│   │   └── images/
+│   │       └── projects/
+│   ├── Utils/
+│   │   └── Constants.js
+│   ├── App.css
+│   ├── App.js
+│   ├── index.css
+│   └── index.js
+├── .gitignore
+├── package-lock.json
+├── pakage.json
+└── README.md
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Functionality Overview
 
-### `npm run build`
+### Home Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-An information 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Profile Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-  social profiles
 
-### `npm run eject`
+### Projects Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Grid of personal projects with descriptions and links
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Academics Page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Timeline of educational background
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 404 Page
 
-## Learn More
+- Custom error page
+- User data fetch (for learning express)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### ContactUs
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ - All the social profiles that can connect
+ - Every app is attached with link
 
-### Code Splitting
+## Packages Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- React
+- Material UI
+- Joy UI
+- React Router
+- Redux Toolkit
+- Typewriter-effect
+- Axios
 
-### Analyzing the Bundle Size
+## Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Runs the app in development mode
 
-### Making a Progressive Web App
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Builds the app for production
 
-### Advanced Configuration
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Runs tests
 
-### Deployment
+```bash
+npm run test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Checks code quality
 
-### `npm run build` fails to minify
+```bash
+npm run lint
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/SaiGanesh9599/PorfolioProject
+```
+
+Navigate to the project directory:
+
+```bash
+cd PorfolioProject
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## Running the Project
+
+After installation, run the project locally:
+
+```bash
+npm start
+```
